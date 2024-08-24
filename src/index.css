@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* In your CSS file */
+.rounded-custom {
+  border-radius: 3rem; /* Adjust this value to increase/decrease curvature */
+}
