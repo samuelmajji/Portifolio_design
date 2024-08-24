@@ -17,7 +17,7 @@ const Footer = () => {
         {/* Footer Right Section */}
         <div className="flex space-x-6">
           <a
-            href="#"
+            href="/"
             className="w-10 h-10 text-black flex justify-center items-center rounded-full hover:bg-orange-600 transition"
           >
             {/* Home Icon */}
@@ -37,7 +37,7 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/_samuel._sam/"
             className="w-10 h-10 text-black flex justify-center items-center rounded-full hover:bg-orange-600 transition"
           >
             {/* Instagram Icon */}
@@ -57,7 +57,7 @@ const Footer = () => {
             </svg>
           </a>
           <a
-            href="#"
+            href="https://x.com/MajjiSamue97753/"
             className="w-10 h-10 text-black flex justify-center items-center rounded-full hover:bg-orange-600 transition"
           >
             {/* X (formerly Twitter) Icon */}

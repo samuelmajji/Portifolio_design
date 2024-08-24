@@ -27,7 +27,10 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-8 bg-white rounded-lg shadow-lg">
+    <div
+      className="max-w-md mx-auto p-8 bg-white rounded-lg shadow-lg"
+      id="contact"
+    >
       <form onSubmit={handleSubmit}>
         <div className="mb-4">
           <label className="block text-lg mb-2" htmlFor="name">

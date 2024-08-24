@@ -78,7 +78,10 @@ const Project = () => {
   };
 
   return (
-    <div className="w-full h-full flex justify-center items-center">
+    <div
+      className="w-full h-full flex justify-center items-center"
+      id="projects"
+    >
       <div className="relative w-full max-w-4xl flex justify-center items-center">
         <button
           onClick={handlePrevClick}
