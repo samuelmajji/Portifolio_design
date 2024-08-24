@@ -14,7 +14,7 @@ function MyJourney() {
         <button
           onClick={() => handleType(webdev)}
           className={
-            Timeline == webdev
+            Timeline === webdev
               ? "text-orange-500 border-b-2 border-orange-500"
               : ""
           }
@@ -32,9 +32,7 @@ function MyJourney() {
           Sports
         </button>
         <button
-          onClick={() => {
-            handleType(Journey);
-          }}
+          onClick={() => handleType(Journey)}
           className={
             Timeline === Journey
               ? "text-orange-500 border-b-2 border-orange-500"
@@ -44,9 +42,7 @@ function MyJourney() {
           Travel
         </button>
         <button
-          onClick={() => {
-            handleType(others);
-          }}
+          onClick={() => handleType(others)}
           className={
             Timeline === others
               ? "text-orange-500 border-b-2 border-orange-500"
@@ -62,11 +58,13 @@ function MyJourney() {
         {Timeline.map((item, index) => (
           <div className="relative" key={index}>
             <div
-              className={`absolute top-5 left-1.5 w-1 bg-${item.color} h-full`}
+              className="absolute top-5 left-1.5 w-1 h-full"
+              style={{ backgroundColor: item.color }}
             ></div>
             <div className="flex items-start mb-4">
               <div
-                className={`h-4 w-4 rounded-full bg-${item.color} mt-0.5`}
+                className="h-4 w-4 rounded-full mt-0.5"
+                style={{ backgroundColor: item.color }}
               ></div>
               <div className="ml-4">
                 <p className="text-sm text-gray-500">{item.date}</p>
