@@ -99,6 +99,7 @@ export const others = [
     description: "Joined as Core member for Nisrga(Sustainability Club)",
     buttonText: "Highlights",
     color: "orange",
+    link: "https://www.instagram.com/nisarga_iitt/",
   },
   {
     date: "Dec, 2023",
@@ -106,5 +107,58 @@ export const others = [
       "Working as Council member for Sports activities at IIT Tirupati",
     buttonText: "Highlights",
     color: "orange",
+  },
+];
+
+export const projects = [
+  {
+    id: 1,
+    name: "ChatMe",
+    description: "Instant messaging made simple, fast, and intuitive",
+    color: "bg-gradient-to-r from-purple-400 to-pink-500",
+    url: "https://github.com/samuelmajji/Chat-app",
+    icon: "ChatIcon",
+  },
+  {
+    id: 2,
+    name: "Portifolio",
+    description:
+      "From concept to code: my projects, skills, and creative explorations",
+    color: "bg-[#C7C3C0]",
+    url: "https://samuelmajjiportifolio.netlify.app/",
+    icon: "FolderIcon",
+  },
+  {
+    id: 3,
+    name: "Calculator",
+    description:
+      "A reliable and stylish calculator for all your mathematical needs",
+    color: "bg-orange-400",
+    url: "https://main.d3t8593tsggvbb.amplifyapp.com",
+    icon: "CalculatorIcon",
+  },
+  {
+    id: 4,
+    name: "Forkify",
+    description: "All types foods, get tasty food recipies with one click",
+    color: "bg-red-400",
+    url: "https://github.com/samuelmajji/Forkify",
+    icon: "PencilIcon",
+  },
+  {
+    id: 4,
+    name: "Blogs",
+    description: "A simple and fast blog saving website",
+    color: "bg-gray-400",
+    url: "https://github.com/samuelmajji/EasyBlog",
+    icon: "PencilIcon",
+  },
+  {
+    id: 4,
+    name: "Notes App",
+    description: "A simple yet powerful notes app to keep you organized",
+    color: "bg-blue-400",
+    url: "https://notesapp.example.com",
+    icon: "PencilIcon",
   },
 ];

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { projects } from "./Data";
 import {
   ChatBubbleLeftRightIcon,
   FolderIcon,
@@ -12,59 +13,6 @@ const projectIcons = {
   CalculatorIcon: <CalculatorIcon className="w-20 h-20 text-white mb-10" />,
   PencilIcon: <PencilIcon className="w-20 h-20 text-white mb-10" />,
 };
-
-const projects = [
-  {
-    id: 1,
-    name: "ChatMe",
-    description: "Instant messaging made simple, fast, and intuitive",
-    color: "bg-gradient-to-r from-purple-400 to-pink-500",
-    url: "https://chatme.example.com",
-    icon: "ChatIcon",
-  },
-  {
-    id: 2,
-    name: "Portifolio",
-    description:
-      "From concept to code: my projects, skills, and creative explorations",
-    color: "bg-[#C7C3C0]",
-    url: "https://portfolio.example.com",
-    icon: "FolderIcon",
-  },
-  {
-    id: 3,
-    name: "Calculator",
-    description:
-      "A reliable and stylish calculator for all your mathematical needs",
-    color: "bg-orange-400",
-    url: "https://calculator.example.com",
-    icon: "CalculatorIcon",
-  },
-  {
-    id: 4,
-    name: "Notes App",
-    description: "A simple yet powerful notes app to keep you organized",
-    color: "bg-blue-400",
-    url: "https://notesapp.example.com",
-    icon: "PencilIcon",
-  },
-  {
-    id: 4,
-    name: "Notes App",
-    description: "A simple yet powerful notes app to keep you organized",
-    color: "bg-blue-400",
-    url: "https://notesapp.example.com",
-    icon: "PencilIcon",
-  },
-  {
-    id: 4,
-    name: "Notes App",
-    description: "A simple yet powerful notes app to keep you organized",
-    color: "bg-blue-400",
-    url: "https://notesapp.example.com",
-    icon: "PencilIcon",
-  },
-];
 
 const Project = () => {
   const [currentProject, setCurrentProject] = useState(0);
@@ -107,7 +55,7 @@ const Project = () => {
             } else if (isNext) {
               classNames += " scale-75 opacity-80 translate-x-full";
             } else {
-              classNames += "scale-50 opacity-50 translate-x-48";
+              classNames += "hidden scale-50 opacity-50 translate-x-48";
             }
 
             return (
