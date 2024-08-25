@@ -30,15 +30,15 @@ const Project = () => {
       className="w-full h-full flex justify-center items-center"
       id="projects"
     >
-      <div className="relative w-full max-w-4xl flex justify-center items-center">
+      <div className="relative w-full max-w-4xl flex justify-center items-center px-4">
         <button
           onClick={handlePrevClick}
-          className="absolute left-0 p-2 text-white bg-gray-800 rounded-full shadow-lg transform -translate-x-1/2"
+          className="absolute left-0 p-2 text-white bg-gray-800 rounded-full shadow-lg transform -translate-x-1/2 sm:p-4"
         >
           &larr;
         </button>
 
-        <div className="flex justify-center items-center space-x-8 relative">
+        <div className="flex justify-center items-center space-x-4 sm:space-x-8 relative">
           {projects.map((project, index) => {
             const isActive = index === currentProject;
             const isPrev =
@@ -61,25 +61,25 @@ const Project = () => {
             return (
               <div
                 key={project.id}
-                className={`${project.color} ${classNames} p-6 rounded-3xl shadow-lg cursor-pointer transform flex flex-col items-center`}
+                className={`${project.color} ${classNames} p-4 sm:p-6 rounded-3xl shadow-lg cursor-pointer transform flex flex-col items-center`}
                 style={{
-                  width: isActive ? "300px" : "200px",
-                  height: isActive ? "400px" : "300px",
+                  width: isActive ? "250px" : "200px",
+                  height: isActive ? "350px" : "300px",
                   position: isActive ? "relative" : "absolute",
                 }}
               >
                 {projectIcons[project.icon]}
-                <h2 className="text-3xl font-bold mb-2 text-center">
+                <h2 className="text-xl sm:text-3xl font-bold mb-2 text-center">
                   {project.name}
                 </h2>
-                <p className="text-lg mb-4 text-center">
+                <p className="text-sm sm:text-lg mb-4 text-center">
                   {project.description}
                 </p>
                 <a
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-[#2197bd] text-white py-2 px-4 rounded-full text-sm hover:bg-gray-700"
+                  className="inline-block bg-[#2197bd] text-white py-1 sm:py-2 px-2 sm:px-4 rounded-full text-xs sm:text-sm hover:bg-gray-700"
                 >
                   Visit Project &rarr;
                 </a>
@@ -90,7 +90,7 @@ const Project = () => {
 
         <button
           onClick={handleNextClick}
-          className="absolute right-0 p-2 text-white bg-gray-800 rounded-full shadow-lg transform translate-x-1/2"
+          className="absolute right-0 p-2 text-white bg-gray-800 rounded-full shadow-lg transform translate-x-1/2 sm:p-4"
         >
           &rarr;
         </button>
