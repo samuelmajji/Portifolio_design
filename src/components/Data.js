@@ -158,7 +158,7 @@ export const projects = [
     name: "Notes App",
     description: "A simple yet powerful notes app to keep you organized",
     color: "bg-blue-400",
-    url: "https://notesapp.example.com",
+    url: "https://github.com/samuelmajji/sticky",
     icon: "PencilIcon",
   },
 ];

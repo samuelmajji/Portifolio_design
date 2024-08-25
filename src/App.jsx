@@ -11,7 +11,7 @@ function App() {
     <>
       <Header />
       <ProfileCard />
-      <Heading id="projects">My Projects</Heading>
+      <Heading>My Projects</Heading>
       <Project />
       <Heading>Journey</Heading>
       <MyJourney />
