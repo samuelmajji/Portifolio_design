@@ -143,7 +143,7 @@ export const projects = [
     description: "All types foods, get tasty food recipies with one click",
     color: "bg-red-400",
     url: "https://github.com/samuelmajji/Forkify",
-    icon: "PencilIcon",
+    icon: "CakeIcon",
   },
   {
     id: 4,
@@ -151,7 +151,7 @@ export const projects = [
     description: "A simple and fast blog saving website",
     color: "bg-gray-400",
     url: "https://github.com/samuelmajji/EasyBlog",
-    icon: "PencilIcon",
+    icon: "DocumentTextIcon",
   },
   {
     id: 4,

@@ -5,6 +5,8 @@ import {
   FolderIcon,
   CalculatorIcon,
   PencilIcon,
+  CakeIcon,
+  DocumentTextIcon,
 } from "@heroicons/react/24/outline";
 
 const projectIcons = {
@@ -12,6 +14,8 @@ const projectIcons = {
   FolderIcon: <FolderIcon className="w-20 h-20 text-white mb-10" />,
   CalculatorIcon: <CalculatorIcon className="w-20 h-20 text-white mb-10" />,
   PencilIcon: <PencilIcon className="w-20 h-20 text-white mb-10" />,
+  CakeIcon: <CakeIcon className="w-20 h-20 text-white mb-10" />,
+  DocumentTextIcon: <DocumentTextIcon className="w-20 h-20 text-white mb-10" />,
 };
 
 const Project = () => {
@@ -51,11 +55,11 @@ const Project = () => {
             if (isActive) {
               classNames += " scale-100 opacity-100 z-10 transform-none";
             } else if (isPrev) {
-              classNames += " scale-75 opacity-80 -translate-x-full";
+              classNames += " scale-75 opacity-100 -translate-x-full";
             } else if (isNext) {
-              classNames += " scale-75 opacity-80 translate-x-full";
+              classNames += " scale-75 opacity-100 translate-x-full";
             } else {
-              classNames += "hidden scale-50 opacity-50 translate-x-48";
+              classNames += "hidden scale-50 opacity-0 translate-x-48";
             }
 
             return (

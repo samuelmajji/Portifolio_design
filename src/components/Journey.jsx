@@ -10,7 +10,7 @@ function MyJourney() {
 
   return (
     <div className="p-4 sm:p-6 lg:p-8 mx-auto">
-      <div className="flex flex-wrap space-x-4 mb-4 text-gray-600 border-b-2 border-gray-200">
+      <div className="flex flex-wrap space-x-20 mb-4 text-gray-600 border-b-2 border-gray-200">
         <button
           onClick={() => handleType(webdev)}
           className={

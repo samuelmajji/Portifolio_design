@@ -7,7 +7,7 @@ const ProfileCard = function () {
         <div className="flex-1 flex items-center justify-center mb-4 sm:mb-0 sm:mr-4">
           <img
             className="h-40 w-40 sm:h-[400px] sm:w-[400px] object-cover"
-            src="profile.png"
+            src="Pic.jpg"
             alt="profile pic"
           />
         </div>
@@ -17,12 +17,11 @@ const ProfileCard = function () {
               Samuel Majji
             </h1>
             <p className="text-base sm:text-2xl mt-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur.
+              Driven athlete with a passion for web development and design,
+              blending creativity with technical expertise. A dedicated problem
+              solver, I thrive on turning challenges into innovative solutions.
+              My hard work and strong management skills ensure that projects are
+              completed efficiently.
             </p>
           </div>
           <div className="flex justify-start mt-4 sm:mt-10 space-x-4 sm:space-x-8">
